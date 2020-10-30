@@ -61,16 +61,20 @@ namespace TP2.Template.Application.Services
 
         public static bool ValidarFecha(string fecha)
         {
+            if (fecha != null)
+            {
+                string expresion = @"^\d?\d[-/]\d?\d[-/]\d\d\d\d$";
 
-            string expresion = @"^\d?\d[-/]\d?\d[-/]\d\d\d\d$";
+                Regex regex = new Regex(expresion);
 
-            Regex regex = new Regex(expresion);
+                Match match = regex.Match(fecha);
 
-            Match match = regex.Match(fecha);
+                bool resultado = match.Success == true ? true : false;
 
-            bool resultado = match.Success == true ? true : false;
+                return resultado;
+            }
+            else return true;
             
-            return resultado;
         }
     }
 }
