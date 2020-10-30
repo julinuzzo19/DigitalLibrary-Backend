@@ -32,7 +32,7 @@ namespace TP2.Template.AccessData.Queries
                 return result.ToList();
             }
 
-            if (estado != 0)
+            if (estado == 1)
             {
                 var query = db.Query("Alquiler").Where("EstadoAlquilerId", "=", estado);
 
@@ -40,6 +40,24 @@ namespace TP2.Template.AccessData.Queries
 
                 return result.ToList();
             }
+
+            if (estado == 2)
+            {
+                var query = db.Query("Alquiler").Where("EstadoAlquilerId", "=", estado);
+
+                var result = query.Get<Alquiler>();
+
+                return result.ToList();
+            }
+            if (estado==3)
+            {
+                var query = db.Query("Alquiler").Where("EstadoAlquilerId", "=", estado);
+
+                var result = query.Get<Alquiler>();
+
+                return result.ToList();
+            }
+            
             else { return null; }
 
         }
