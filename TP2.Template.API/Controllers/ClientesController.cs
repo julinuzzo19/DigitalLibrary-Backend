@@ -39,14 +39,23 @@ namespace TP2.Template.API.Controllers
 
         [HttpGet("{Id?}")]
         public IActionResult GetById(int Id)
-        {          
-            try 
+        {
+            try
             {
-                return new JsonResult(_service.GetById(Id)) { StatusCode = 200 };
+                ClienteDto cliente = _service.GetById(Id);
+                if (cliente == null)
+                {
+                    throw new Exception();
+                }
+
+                else { 
+                        return new JsonResult(cliente) { StatusCode = 200 };
+                    }
+
             }
             catch
             {
-                return BadRequest();
+                return NotFound();
             }
         }
 

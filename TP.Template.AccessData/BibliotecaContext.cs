@@ -17,7 +17,6 @@ namespace TP.Template.AccessData
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Libro> Libros { get; set; }
         public DbSet<Alquiler> Alquileres { get; set; }
-        public DbSet<EstadoAlquiler> EstadoAlquileres { get; set; }
       
         protected override void OnModelCreating(ModelBuilder builder)
         {

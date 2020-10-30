@@ -40,9 +40,12 @@ namespace TP2.Template.Application.Services
             _repository.SaveChanges();
             return new ClienteResponse
             { 
-                Nombre=cliente.Nombre,
-                Apellido=cliente.Apellido,
-                Email=cliente.Email
+               Id=entity.Id,
+                Nombre= entity.Nombre,
+                Apellido= entity.Apellido,
+                Email= entity.Email,
+                Dni=entity.Dni
+                
             };
         }     
 
