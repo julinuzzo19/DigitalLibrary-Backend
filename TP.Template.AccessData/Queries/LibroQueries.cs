@@ -26,28 +26,28 @@ namespace TP2.Template.AccessData.Queries
         {
             var db = new QueryFactory(connection, sqlKataCompiler);
 
-            if (stock==0 && autor==null && titulo==null)
+            if (stock==0 && string.IsNullOrEmpty(autor) && string.IsNullOrEmpty(titulo))
             {
                 var query = db.Query("Libro");
                 var result = query.Get<ResponseLibro>();
                 return result.ToList();
             }
 
-            if (stock!=0)
+            if (stock>0)
             {
                 var query = db.Query("Libro").Where("Libro.Stock","=",stock);                              
                 var result = query.Get<ResponseLibro>();
                 return result.ToList();
             }
 
-            if (autor!=null)
+            if (!string.IsNullOrEmpty(autor))
             {
                 var query = db.Query("Libro").WhereRaw($"Autor like '%{autor}%'", "sql");
                 var result = query.Get<ResponseLibro>();
                 return result.ToList();
             }
 
-            if (titulo!=null)
+            if (!string.IsNullOrEmpty(titulo))
             {
                 var query = db.Query("Libro").WhereRaw($"Titulo like '%{titulo}%'", "sql");
                 var result = query.Get<ResponseLibro>();

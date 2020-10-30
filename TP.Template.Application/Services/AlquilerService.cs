@@ -41,7 +41,7 @@ namespace TP2.Template.Application.Services
                 ISBN=alquiler.ISBN              
             };
 
-            if (alquiler.FechaAlquiler=="string"|| alquiler.FechaAlquiler == "")//Es reserva
+            if (string.IsNullOrWhiteSpace(alquiler.FechaAlquiler))//Es reserva
             {
                 entity.FechaReserva = Convert.ToDateTime(alquiler.FechaReserva);
                 entity.EstadoAlquilerId = 2;
@@ -52,10 +52,10 @@ namespace TP2.Template.Application.Services
                     _repository.Add<Alquiler>(entity);
                     _repository.SaveChanges();
                 }
-                else { return null; }
+                else { throw new Exception(); }
             }
-            
-            if (alquiler.FechaReserva == "string" || alquiler.FechaReserva == "")//Es alquiler
+
+            if (string.IsNullOrWhiteSpace(alquiler.FechaReserva))//Es alquiler
             {
                 entity.FechaAlquiler = Convert.ToDateTime(alquiler.FechaAlquiler).Date;
                 entity.FechaDevolucion = Convert.ToDateTime(alquiler.FechaAlquiler).Date.AddDays(7);
@@ -67,7 +67,12 @@ namespace TP2.Template.Application.Services
                     _repository.Add<Alquiler>(entity);
                     _repository.SaveChanges();
                 }
-                else { return null; }
+                else { throw new Exception(); }
+            }
+
+            if (!string.IsNullOrWhiteSpace(alquiler.FechaReserva)&& !string.IsNullOrWhiteSpace(alquiler.FechaAlquiler))
+            {
+                 throw new Exception(); 
             }
                                         
             return new AlquilerResponse
@@ -160,7 +165,7 @@ namespace TP2.Template.Application.Services
             }
             List<AlquilerResponse> alql = new List<AlquilerResponse>() { };
 
-            if (id != 0)
+            if (id > 0)
             {
                 foreach (Alquiler item in alquileres)
                 {
