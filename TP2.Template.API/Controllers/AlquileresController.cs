@@ -88,11 +88,11 @@ namespace TP2.Template.API.Controllers
         }
 
         [HttpPut]
-        public IActionResult PutAlquiler(int clienteid, string isbn)
+        public IActionResult PutAlquiler(UpdateAlquilerBody alquiler)
         {           
             try
             {
-                _service.UpdateById(clienteid, isbn);
+                _service.UpdateById(alquiler);
                 return  Ok();
             }
             catch

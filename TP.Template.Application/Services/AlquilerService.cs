@@ -14,7 +14,7 @@ namespace TP2.Template.Application.Services
         AlquilerResponse CreateAlquiler(AlquilerDto alquiler);
         List<AlquilerResponse> GetAll(int estado);
         AlquilerResponse GetById(int id);
-        void UpdateById(int clienteid, string isbn);
+        void UpdateById(UpdateAlquilerBody alquiler);
         List<AlquilerResponse> GetLibrosByCliente(int id);
     }
 
@@ -137,9 +137,11 @@ namespace TP2.Template.Application.Services
             return alql;          
         }
 
-        public void UpdateById(int clienteid, string isbn)
+        public void UpdateById(UpdateAlquilerBody alquiler)
         {
-            Alquiler alq = _query.GetAlquilerById_Isbn(clienteid, isbn);
+                     
+            
+            Alquiler alq = _query.GetAlquilerById_Isbn(alquiler.ClienteId,alquiler.ISBN);
             if (alq.EstadoAlquilerId == 2)
             {
                 alq.EstadoAlquilerId = 1;
