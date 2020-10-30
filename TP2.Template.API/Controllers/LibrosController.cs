@@ -39,15 +39,16 @@ namespace TP2.Template.API.Controllers
         [HttpGet("{Id?}")]
         public IActionResult GetById(string Id)
         {
-            ResponseLibro libro = _service.GetLibroById(Id);
+            
             try
             {
+                ResponseLibro libro = _service.GetLibroById(Id);
                 return new JsonResult(libro) { StatusCode = 200 };
             }
             catch (Exception)
             {
 
-                return BadRequest();
+                return NotFound();
             }
            
         }
