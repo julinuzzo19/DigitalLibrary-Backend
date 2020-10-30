@@ -48,10 +48,10 @@ namespace TP2.Template.API.Controllers
                     throw new Exception();
                 }
 
-                else { 
-                        return new JsonResult(cliente) { StatusCode = 200 };
-                    }
-
+                else 
+                { 
+                    return new JsonResult(cliente) { StatusCode = 200 };
+                }
             }
             catch
             {

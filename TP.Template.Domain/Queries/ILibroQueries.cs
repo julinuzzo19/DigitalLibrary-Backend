@@ -9,7 +9,7 @@ namespace TP2.Template.Domain.Queries
     public interface ILibroQueries
     {
         Libro GetLibroById(string id);
-        List<ResponseLibro> GetAllLibros(int stock, string autor, string titulo);
+        List<ResponseLibro> GetAllLibros(bool? stock, string autor, string titulo);
 
     }
 }

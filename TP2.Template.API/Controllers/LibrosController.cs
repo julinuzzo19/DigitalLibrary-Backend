@@ -24,7 +24,7 @@ namespace TP2.Template.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetLibros([FromQuery]int stock, [FromQuery] string autor, [FromQuery] string titulo)
+        public IActionResult GetLibros([FromQuery]bool? stock, [FromQuery] string autor, [FromQuery] string titulo)
         {
             try
             {

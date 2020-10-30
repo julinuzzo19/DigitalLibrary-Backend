@@ -9,7 +9,7 @@ namespace TP2.Template.Application.Services
     public interface ILibroService
     {
         ResponseLibro CreateLibro(LibroDto libro);
-        List<ResponseLibro> GetAllLibros(int stock, string autor, string titulo);
+        List<ResponseLibro> GetAllLibros(bool? stock, string autor, string titulo);
         ResponseLibro GetLibroById(string id);
     }
     public class LibroService:ILibroService
@@ -45,9 +45,9 @@ namespace TP2.Template.Application.Services
                 Imagen=entity.Imagen          
             };
         }
-        public List<ResponseLibro> GetAllLibros(int stock, string autor,string titulo)
-        {
-           return _query.GetAllLibros(stock,autor,titulo);
+        public List<ResponseLibro> GetAllLibros(bool? stock, string autor,string titulo)
+        {    
+            return _query.GetAllLibros(stock, autor,titulo);
         }
 
         public ResponseLibro GetLibroById(string id)

@@ -22,21 +22,32 @@ namespace TP2.Template.AccessData.Queries
             this.sqlKataCompiler = sqlKataCompiler;
         }
 
-        public List<ResponseLibro> GetAllLibros(int stock, string autor, string titulo)
+        public List<ResponseLibro> GetAllLibros(bool? stock, string autor, string titulo)
         {
             var db = new QueryFactory(connection, sqlKataCompiler);
 
-            if (stock==0 && string.IsNullOrEmpty(autor) && string.IsNullOrEmpty(titulo))
+            if (stock==null && string.IsNullOrEmpty(autor) && string.IsNullOrEmpty(titulo))
             {
                 var query = db.Query("Libro");
                 var result = query.Get<ResponseLibro>();
+                              
                 return result.ToList();
             }
 
-            if (stock>0)
+            if (stock==true)
             {
-                var query = db.Query("Libro").Where("Libro.Stock","=",stock);                              
+
+               var query = db.Query("Libro").Where("Libro.Stock", ">", 0);
+               var result = query.Get<ResponseLibro>();
+
+                return result.ToList();
+            }
+
+            if (stock==false)
+            {
+                var query = db.Query("Libro").Where("Libro.Stock", "=", 0);
                 var result = query.Get<ResponseLibro>();
+
                 return result.ToList();
             }
 
