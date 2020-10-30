@@ -55,7 +55,7 @@ namespace TP2.Template.API.Controllers
         {           
             try
             {
-                if (Validacion.ValidarEmail(cliente.Email) && Validacion.ValidadDni(cliente.Dni)&&Validacion.ValidarNombre(cliente.Nombre)&&Validacion.ValidarNombre(cliente.Apellido))
+                if (Validacion.ValidarEmail(cliente.Email) && Validacion.ValidarDni(cliente.Dni)&&Validacion.ValidarNombre(cliente.Nombre)&&Validacion.ValidarNombre(cliente.Apellido))
                 {
                     return new JsonResult(_service.CreateCliente(cliente)) { StatusCode = 201 };
                 }

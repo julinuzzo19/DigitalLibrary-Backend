@@ -25,7 +25,7 @@ namespace TP2.Template.Application.Services
 
         }
 
-        public static bool ValidadDni(string dni)
+        public static bool ValidarDni(string dni)
         {
 
             string dato = dni.Substring(0,8);
