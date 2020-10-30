@@ -31,7 +31,7 @@ namespace TP2.Template.API.Controllers
             }
             catch
             {
-                return BadRequest();
+                return NotFound();
             }
         }
 

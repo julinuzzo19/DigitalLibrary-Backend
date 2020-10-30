@@ -159,10 +159,7 @@ namespace TP2.Template.Application.Services
         public List<AlquilerResponse> GetLibrosByCliente(int id)
         {
             List<Alquiler> alquileres = _query.GetLibrosByCliente(id);
-            if (alquileres.Count==0)
-            {
-                throw new Exception();
-            }
+            
             List<AlquilerResponse> alql = new List<AlquilerResponse>() { };
 
             if (id > 0)
