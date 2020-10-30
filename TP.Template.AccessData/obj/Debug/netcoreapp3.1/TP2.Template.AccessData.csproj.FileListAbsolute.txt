@@ -1,0 +1,34 @@
+C:\Users\Nuzzo\Desktop\Julian\TP2 PS\TP.Template.AccessData\bin\Debug\netcoreapp3.1\TP2.Template.AccessData.deps.json
+C:\Users\Nuzzo\Desktop\Julian\TP2 PS\TP.Template.AccessData\bin\Debug\netcoreapp3.1\TP2.Template.AccessData.runtimeconfig.json
+C:\Users\Nuzzo\Desktop\Julian\TP2 PS\TP.Template.AccessData\bin\Debug\netcoreapp3.1\TP2.Template.AccessData.runtimeconfig.dev.json
+C:\Users\Nuzzo\Desktop\Julian\TP2 PS\TP.Template.AccessData\bin\Debug\netcoreapp3.1\TP2.Template.AccessData.dll
+C:\Users\Nuzzo\Desktop\Julian\TP2 PS\TP.Template.AccessData\bin\Debug\netcoreapp3.1\TP2.Template.AccessData.pdb
+C:\Users\Nuzzo\Desktop\Julian\TP2 PS\TP.Template.AccessData\bin\Debug\netcoreapp3.1\TP2.Template.Application.dll
+C:\Users\Nuzzo\Desktop\Julian\TP2 PS\TP.Template.AccessData\bin\Debug\netcoreapp3.1\TP2.Template.Domain.dll
+C:\Users\Nuzzo\Desktop\Julian\TP2 PS\TP.Template.AccessData\bin\Debug\netcoreapp3.1\TP2.Template.Application.pdb
+C:\Users\Nuzzo\Desktop\Julian\TP2 PS\TP.Template.AccessData\bin\Debug\netcoreapp3.1\TP2.Template.Domain.pdb
+C:\Users\Nuzzo\Desktop\Julian\TP2 PS\TP.Template.AccessData\obj\Debug\netcoreapp3.1\TP2.Template.AccessData.csprojAssemblyReference.cache
+C:\Users\Nuzzo\Desktop\Julian\TP2 PS\TP.Template.AccessData\obj\Debug\netcoreapp3.1\TP2.Template.AccessData.AssemblyInfoInputs.cache
+C:\Users\Nuzzo\Desktop\Julian\TP2 PS\TP.Template.AccessData\obj\Debug\netcoreapp3.1\TP2.Template.AccessData.AssemblyInfo.cs
+C:\Users\Nuzzo\Desktop\Julian\TP2 PS\TP.Template.AccessData\obj\Debug\netcoreapp3.1\TP2.Template.AccessData.csproj.CoreCompileInputs.cache
+C:\Users\Nuzzo\Desktop\Julian\TP2 PS\TP.Template.AccessData\obj\Debug\netcoreapp3.1\TP2.Template.AccessData.csproj.CopyComplete
+C:\Users\Nuzzo\Desktop\Julian\TP2 PS\TP.Template.AccessData\obj\Debug\netcoreapp3.1\TP2.Template.AccessData.dll
+C:\Users\Nuzzo\Desktop\Julian\TP2 PS\TP.Template.AccessData\obj\Debug\netcoreapp3.1\TP2.Template.AccessData.pdb
+C:\Users\Nuzzo\Desktop\Julian\TP2 PS\TP.Template.AccessData\obj\Debug\netcoreapp3.1\TP2.Template.AccessData.genruntimeconfig.cache
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.AccessData\bin\Debug\netcoreapp3.1\TP2.Template.AccessData.deps.json
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.AccessData\bin\Debug\netcoreapp3.1\TP2.Template.AccessData.runtimeconfig.json
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.AccessData\bin\Debug\netcoreapp3.1\TP2.Template.AccessData.runtimeconfig.dev.json
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.AccessData\bin\Debug\netcoreapp3.1\TP2.Template.AccessData.dll
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.AccessData\bin\Debug\netcoreapp3.1\TP2.Template.AccessData.pdb
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.AccessData\bin\Debug\netcoreapp3.1\TP2.Template.Application.dll
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.AccessData\bin\Debug\netcoreapp3.1\TP2.Template.Domain.dll
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.AccessData\bin\Debug\netcoreapp3.1\TP2.Template.Application.pdb
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.AccessData\bin\Debug\netcoreapp3.1\TP2.Template.Domain.pdb
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.AccessData\obj\Debug\netcoreapp3.1\TP2.Template.AccessData.csprojAssemblyReference.cache
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.AccessData\obj\Debug\netcoreapp3.1\TP2.Template.AccessData.AssemblyInfoInputs.cache
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.AccessData\obj\Debug\netcoreapp3.1\TP2.Template.AccessData.AssemblyInfo.cs
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.AccessData\obj\Debug\netcoreapp3.1\TP2.Template.AccessData.csproj.CoreCompileInputs.cache
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.AccessData\obj\Debug\netcoreapp3.1\TP2.Template.AccessData.csproj.CopyComplete
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.AccessData\obj\Debug\netcoreapp3.1\TP2.Template.AccessData.dll
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.AccessData\obj\Debug\netcoreapp3.1\TP2.Template.AccessData.pdb
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.AccessData\obj\Debug\netcoreapp3.1\TP2.Template.AccessData.genruntimeconfig.cache
