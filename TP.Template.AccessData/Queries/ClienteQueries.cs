@@ -26,27 +26,28 @@ namespace TP2.Template.AccessData.Queries
         {                     
             var db = new QueryFactory(connection, sqlKataCompiler);
 
-            if (nombre==null && apellido==null && dni==null)
+            if (string.IsNullOrWhiteSpace(nombre) && string.IsNullOrWhiteSpace(apellido) && string.IsNullOrWhiteSpace(dni) )
             {
+                
                 var query = db.Query("Cliente").From("Cliente");
                 var result = query.Get<ClienteResponse>();
                 return result.ToList();
             }
-            if (nombre!=null)
+            if (!string.IsNullOrWhiteSpace(nombre))
             {
 
                 var query = db.Query("Cliente").WhereRaw($"Nombre like '%{nombre}%'", "sql");    
                 var result = query.Get<ClienteResponse>();
                 return result.ToList();
             }
-            if (apellido!=null)
+            if (!string.IsNullOrWhiteSpace(apellido))
             {
 
                 var query = db.Query("Cliente").WhereRaw($"Apellido like '%{apellido}%'", "sql");
                 var result = query.Get<ClienteResponse>();
                 return result.ToList();
             }
-            if (dni!=null)
+            if (!string.IsNullOrWhiteSpace(dni))
             {
                 var query = db.Query("Cliente").Where("Cliente.Dni", "=", dni);
                 var result = query.Get<ClienteResponse>();
