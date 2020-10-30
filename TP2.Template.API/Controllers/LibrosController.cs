@@ -1,20 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using TP.Template.AccessData;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using TP2.Template.Application.Services;
 using TP2.Template.Domain.DTOs;
-using TP2.Template.Domain.Entities;
 
 namespace TP2.Template.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-     public class LibrosController : ControllerBase
+    public class LibrosController : ControllerBase
     {
         private readonly ILibroService _service;
 
@@ -24,11 +17,11 @@ namespace TP2.Template.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetLibros([FromQuery]bool? stock, [FromQuery] string autor, [FromQuery] string titulo)
+        public IActionResult GetLibros([FromQuery] bool? stock, [FromQuery] string autor, [FromQuery] string titulo)
         {
             try
             {
-                return new JsonResult(_service.GetAllLibros(stock,autor,titulo)) { StatusCode = 200 };
+                return new JsonResult(_service.GetAllLibros(stock, autor, titulo)) { StatusCode = 200 };
             }
             catch (Exception e)
             {
@@ -39,7 +32,7 @@ namespace TP2.Template.API.Controllers
         [HttpGet("{Id?}")]
         public IActionResult GetById(string Id)
         {
-            
+
             try
             {
                 ResponseLibro libro = _service.GetLibroById(Id);
@@ -50,7 +43,7 @@ namespace TP2.Template.API.Controllers
 
                 return NotFound();
             }
-           
+
         }
 
         [HttpPost]

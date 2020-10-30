@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using TP2.Template.Domain.DTOs;
+﻿using System.Collections.Generic;
 using TP2.Template.Domain.Entities;
 
 namespace TP2.Template.Domain.Queries
@@ -10,7 +7,7 @@ namespace TP2.Template.Domain.Queries
     {
         List<Alquiler> GetAllAlquiler(int estado);
         Alquiler GetAlquilerById(int id);
-       Alquiler GetAlquilerById_Isbn(int clienteid, string isbn);
+        Alquiler GetAlquilerById_Isbn(int clienteid, string isbn);
         List<Alquiler> GetLibrosByCliente(int id);
     }
 }

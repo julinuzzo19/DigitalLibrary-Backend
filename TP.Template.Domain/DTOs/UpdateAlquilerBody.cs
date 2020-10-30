@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace TP2.Template.Domain.DTOs
+﻿namespace TP2.Template.Domain.DTOs
 {
     public class UpdateAlquilerBody
     {

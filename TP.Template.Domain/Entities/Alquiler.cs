@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TP2.Template.Domain.Entities
 {
@@ -21,8 +19,8 @@ namespace TP2.Template.Domain.Entities
         public DateTime? FechaDevolucion { get; set; }
 
         //Foreign Keys
-        
-        public int ClienteId { get; set; }       
+
+        public int ClienteId { get; set; }
         public int EstadoAlquilerId { get; set; }
         public string ISBN { get; set; }
 

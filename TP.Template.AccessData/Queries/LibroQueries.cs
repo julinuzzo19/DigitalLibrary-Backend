@@ -1,10 +1,8 @@
 ﻿using SqlKata.Compilers;
 using SqlKata.Execution;
-using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Text;
 using TP2.Template.Domain.DTOs;
 using TP2.Template.Domain.Entities;
 using TP2.Template.Domain.Queries;
@@ -26,24 +24,24 @@ namespace TP2.Template.AccessData.Queries
         {
             var db = new QueryFactory(connection, sqlKataCompiler);
 
-            if (stock==null && string.IsNullOrEmpty(autor) && string.IsNullOrEmpty(titulo))
+            if (stock == null && string.IsNullOrEmpty(autor) && string.IsNullOrEmpty(titulo))
             {
                 var query = db.Query("Libro");
                 var result = query.Get<ResponseLibro>();
-                              
+
                 return result.ToList();
             }
 
-            if (stock==true)
+            if (stock == true)
             {
 
-               var query = db.Query("Libro").Where("Libro.Stock", ">", 0);
-               var result = query.Get<ResponseLibro>();
+                var query = db.Query("Libro").Where("Libro.Stock", ">", 0);
+                var result = query.Get<ResponseLibro>();
 
                 return result.ToList();
             }
 
-            if (stock==false)
+            if (stock == false)
             {
                 var query = db.Query("Libro").Where("Libro.Stock", "=", 0);
                 var result = query.Get<ResponseLibro>();
@@ -72,8 +70,8 @@ namespace TP2.Template.AccessData.Queries
         {
             var db = new QueryFactory(connection, sqlKataCompiler);
             var libro = db.Query("Libro").Where("ISBN", "=", id).FirstOrDefault<Libro>();
-            
-                return libro;           
+
+            return libro;
         }
     }
 }

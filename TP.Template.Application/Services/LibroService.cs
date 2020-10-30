@@ -12,7 +12,7 @@ namespace TP2.Template.Application.Services
         List<ResponseLibro> GetAllLibros(bool? stock, string autor, string titulo);
         ResponseLibro GetLibroById(string id);
     }
-    public class LibroService:ILibroService
+    public class LibroService : ILibroService
     {
         private readonly IGenericsRepository _repository;
         private readonly ILibroQueries _query;
@@ -35,33 +35,33 @@ namespace TP2.Template.Application.Services
             };
             _repository.Add<Libro>(entity);
             _repository.SaveChanges();
-            return new ResponseLibro 
+            return new ResponseLibro
             {
-                ISBN=entity.ISBN,
-                Titulo=entity.Titulo,
-                Autor=entity.Autor,
-                Editorial=entity.Editorial,
-                Stock=(int)entity.Stock,
-                Imagen=entity.Imagen          
+                ISBN = entity.ISBN,
+                Titulo = entity.Titulo,
+                Autor = entity.Autor,
+                Editorial = entity.Editorial,
+                Stock = (int)entity.Stock,
+                Imagen = entity.Imagen
             };
         }
-        public List<ResponseLibro> GetAllLibros(bool? stock, string autor,string titulo)
-        {    
-            return _query.GetAllLibros(stock, autor,titulo);
+        public List<ResponseLibro> GetAllLibros(bool? stock, string autor, string titulo)
+        {
+            return _query.GetAllLibros(stock, autor, titulo);
         }
 
         public ResponseLibro GetLibroById(string id)
         {
             Libro libro = _query.GetLibroById(id);
 
-            return new ResponseLibro 
+            return new ResponseLibro
             {
-               ISBN=libro.ISBN,
-               Titulo=libro.Titulo,
-               Autor=libro.Autor,
-               Editorial=libro.Editorial,
-               Stock=(int)libro.Stock,
-               Imagen=libro.Imagen
+                ISBN = libro.ISBN,
+                Titulo = libro.Titulo,
+                Autor = libro.Autor,
+                Editorial = libro.Editorial,
+                Stock = (int)libro.Stock,
+                Imagen = libro.Imagen
             };
         }
     }

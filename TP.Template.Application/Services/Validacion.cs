@@ -1,25 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace TP2.Template.Application.Services
 {
-    public  class Validacion
+    public class Validacion
     {
-        
+
         public static bool ValidarEmail(string email)
         {
 
             string expresion = @"\w+.?\w+@\w[^_.]+\.com";
 
-             Regex regex = new Regex(expresion);
+            Regex regex = new Regex(expresion);
 
             Match match = regex.Match(email);
-            
-           
-           bool resultado= match.Success == true ? true : false;
+
+
+            bool resultado = match.Success == true ? true : false;
 
             return resultado;
 
@@ -28,7 +24,7 @@ namespace TP2.Template.Application.Services
         public static bool ValidarDni(string dni)
         {
 
-            string dato = dni.Substring(0,8);
+            string dato = dni.Substring(0, 8);
 
             string expresion = @"\d{5,6}[^\s.,_]\S";
 
@@ -74,8 +70,7 @@ namespace TP2.Template.Application.Services
                 return resultado;
             }
             else return true;
-            
+
         }
     }
 }
-            

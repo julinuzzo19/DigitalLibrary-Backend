@@ -1,12 +1,9 @@
 ﻿using SqlKata.Compilers;
 using SqlKata.Execution;
-using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Text;
 using TP2.Template.Domain.DTOs;
-using TP2.Template.Domain.Entities;
 using TP2.Template.Domain.Queries;
 
 namespace TP2.Template.AccessData.Queries
@@ -23,12 +20,12 @@ namespace TP2.Template.AccessData.Queries
         }
 
         public List<ClienteResponse> GetAllClientes(string nombre, string apellido, string dni)
-        {                     
+        {
             var db = new QueryFactory(connection, sqlKataCompiler);
 
-            if (string.IsNullOrWhiteSpace(nombre) && string.IsNullOrWhiteSpace(apellido) && string.IsNullOrWhiteSpace(dni) )
+            if (string.IsNullOrWhiteSpace(nombre) && string.IsNullOrWhiteSpace(apellido) && string.IsNullOrWhiteSpace(dni))
             {
-                
+
                 var query = db.Query("Cliente").From("Cliente");
                 var result = query.Get<ClienteResponse>();
                 return result.ToList();
@@ -36,7 +33,7 @@ namespace TP2.Template.AccessData.Queries
             if (!string.IsNullOrWhiteSpace(nombre))
             {
 
-                var query = db.Query("Cliente").WhereRaw($"Nombre like '%{nombre}%'", "sql");    
+                var query = db.Query("Cliente").WhereRaw($"Nombre like '%{nombre}%'", "sql");
                 var result = query.Get<ClienteResponse>();
                 return result.ToList();
             }
@@ -54,15 +51,15 @@ namespace TP2.Template.AccessData.Queries
                 return result.ToList();
             }
             return null;
-                    
+
         }
 
         public ClienteDto GetClienteById(int id)
         {
             var db = new QueryFactory(connection, sqlKataCompiler);
             var cliente = db.Query("Cliente").SelectRaw("*").From("Cliente").Where("Cliente.Id", "=", id).FirstOrDefault<ClienteDto>();
-          
-            return cliente;         
+
+            return cliente;
         }
     }
 }

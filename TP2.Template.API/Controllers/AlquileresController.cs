@@ -1,8 +1,6 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
-using System.Net;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using TP2.Template.Application.Services;
 using TP2.Template.Domain.DTOs;
 
@@ -18,15 +16,15 @@ namespace TP2.Template.API.Controllers
         {
             _service = service;
         }
-       
+
 
         [HttpGet("cliente/{id}")]
         public IActionResult GetLibrosByCliente(int id)
-        {       
+        {
             try
             {
                 List<AlquilerResponse> alquilerResponse = _service.GetLibrosByCliente(id);
-             
+
                 return new JsonResult(alquilerResponse) { StatusCode = 201 };
             }
             catch
@@ -62,14 +60,14 @@ namespace TP2.Template.API.Controllers
                 return BadRequest();
             }
         }
-    
+
         // POST: api/Alquileres       
         [HttpPost]
         public IActionResult PostAlquiler(AlquilerDto alquiler)
         {
             try
             {
-                if (Validacion.ValidarFecha(alquiler.FechaAlquiler)|| Validacion.ValidarFecha(alquiler.FechaReserva))
+                if (Validacion.ValidarFecha(alquiler.FechaAlquiler) || Validacion.ValidarFecha(alquiler.FechaReserva))
                 {
                     AlquilerResponse alquilerresponse = _service.CreateAlquiler(alquiler);
                     if (alquilerresponse == null)
@@ -77,29 +75,29 @@ namespace TP2.Template.API.Controllers
                         throw new Exception();
                     }
                 }
-                
-               
+
+
                 return Created("Created", alquiler);
             }
             catch
-            { 
+            {
                 return BadRequest();
             }
         }
 
         [HttpPut]
         public IActionResult PutAlquiler(UpdateAlquilerBody alquiler)
-        {           
+        {
             try
             {
                 _service.UpdateById(alquiler);
-                return  Ok();
+                return Ok();
             }
             catch
             {
                 return BadRequest();
-            } 
-        
+            }
+
         }
 
     }

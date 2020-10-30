@@ -1,17 +1,14 @@
 ﻿using SqlKata.Compilers;
 using SqlKata.Execution;
-using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Text;
-using TP2.Template.Domain.DTOs;
 using TP2.Template.Domain.Entities;
 using TP2.Template.Domain.Queries;
 
 namespace TP2.Template.AccessData.Queries
 {
-    public class AlquilerQueries:IAlquilerQueries
+    public class AlquilerQueries : IAlquilerQueries
     {
         private readonly IDbConnection connection;
         private readonly Compiler sqlKataCompiler;
@@ -26,7 +23,7 @@ namespace TP2.Template.AccessData.Queries
         {
             var db = new QueryFactory(connection, sqlKataCompiler);
 
-            if (estado == 0 )
+            if (estado == 0)
             {
                 var query = db.Query("Alquiler");
 
@@ -44,32 +41,32 @@ namespace TP2.Template.AccessData.Queries
                 return result.ToList();
             }
             else { return null; }
-          
+
         }
 
         public Alquiler GetAlquilerById(int id)
         {
             var db = new QueryFactory(connection, sqlKataCompiler);
 
-            var alquiler = db.Query("Alquiler")                
+            var alquiler = db.Query("Alquiler")
                 .Where("Id", "=", id).FirstOrDefault<Alquiler>();
-        
-                return alquiler;                 
+
+            return alquiler;
         }
-     
+
 
         public Alquiler GetAlquilerById_Isbn(int clienteid, string isbn)
         {
             var db = new QueryFactory(connection, sqlKataCompiler);
 
             var alquiler = db.Query("Alquiler").Where(new
-                {
-                    ISBN=isbn,
-                    ClienteId= clienteid
-                
-                }).FirstOrDefault<Alquiler>();
+            {
+                ISBN = isbn,
+                ClienteId = clienteid
 
-            return alquiler;        
+            }).FirstOrDefault<Alquiler>();
+
+            return alquiler;
         }
 
         public List<Alquiler> GetLibrosByCliente(int id)

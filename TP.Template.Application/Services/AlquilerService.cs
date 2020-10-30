@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using TP2.Template.Domain.Entities;
-using TP2.Template.Domain.DTOs;
-using TP2.Template.Domain;
 using TP2.Template.Domain.Commands;
+using TP2.Template.Domain.DTOs;
+using TP2.Template.Domain.Entities;
 using TP2.Template.Domain.Queries;
 
 namespace TP2.Template.Application.Services
@@ -24,7 +22,7 @@ namespace TP2.Template.Application.Services
         private readonly IAlquilerQueries _query;
         private readonly ILibroQueries _libroquery;
 
-        public AlquilerService(IGenericsRepository repository,IAlquilerQueries query, ILibroQueries libroquery)
+        public AlquilerService(IGenericsRepository repository, IAlquilerQueries query, ILibroQueries libroquery)
         {
             _repository = repository;
             _query = query;
@@ -34,11 +32,11 @@ namespace TP2.Template.Application.Services
         public AlquilerResponse CreateAlquiler(AlquilerDto alquiler)
         {
             Libro libro = _libroquery.GetLibroById(alquiler.ISBN);
-            
+
             var entity = new Alquiler
             {
-                ClienteId = alquiler.ClienteId,                
-                ISBN=alquiler.ISBN              
+                ClienteId = alquiler.ClienteId,
+                ISBN = alquiler.ISBN
             };
 
             if (string.IsNullOrWhiteSpace(alquiler.FechaAlquiler))//Es reserva
@@ -70,20 +68,20 @@ namespace TP2.Template.Application.Services
                 else { throw new Exception(); }
             }
 
-            if (!string.IsNullOrWhiteSpace(alquiler.FechaReserva)&& !string.IsNullOrWhiteSpace(alquiler.FechaAlquiler))
+            if (!string.IsNullOrWhiteSpace(alquiler.FechaReserva) && !string.IsNullOrWhiteSpace(alquiler.FechaAlquiler))
             {
-                 throw new Exception(); 
+                throw new Exception();
             }
-                                        
+
             return new AlquilerResponse
-            { 
-                Id=entity.Id,
-                FechaAlquiler=entity.FechaAlquiler.ToString(),
-                FechaReserva=entity.ToString(),
-                FechaDevolucion =entity.ToString(),
-                ClienteId =entity.ClienteId,
-                LibroISBN=entity.ISBN
-                
+            {
+                Id = entity.Id,
+                FechaAlquiler = entity.FechaAlquiler.ToString(),
+                FechaReserva = entity.ToString(),
+                FechaDevolucion = entity.ToString(),
+                ClienteId = entity.ClienteId,
+                LibroISBN = entity.ISBN
+
             };
         }
 
@@ -100,21 +98,21 @@ namespace TP2.Template.Application.Services
                 FechaDevolucion = alquiler.FechaDevolucion.ToString(),
                 FechaReserva = alquiler.FechaReserva.ToString(),
                 ClienteId = alquiler.ClienteId,
-                LibroISBN=alquiler.ISBN,
+                LibroISBN = alquiler.ISBN,
                 Titulo = libro.Titulo,
                 Autor = libro.Autor,
                 Editorial = libro.Editorial,
                 Stock = (int)libro.Stock,
             };
-          
-            return alquilerresponse;       
+
+            return alquilerresponse;
         }
 
         public List<AlquilerResponse> GetAll(int estado)
         {
-            List<Alquiler> alquileres= _query.GetAllAlquiler(estado);
+            List<Alquiler> alquileres = _query.GetAllAlquiler(estado);
             List<AlquilerResponse> alql = new List<AlquilerResponse>() { };
-            
+
             foreach (Alquiler item in alquileres)
             {
                 Libro libro = _libroquery.GetLibroById(item.ISBN);
@@ -134,14 +132,14 @@ namespace TP2.Template.Application.Services
                 };
                 alql.Add(alr);
             }
-            return alql;          
+            return alql;
         }
 
         public void UpdateById(UpdateAlquilerBody alquiler)
         {
-                     
-            
-            Alquiler alq = _query.GetAlquilerById_Isbn(alquiler.ClienteId,alquiler.ISBN);
+
+
+            Alquiler alq = _query.GetAlquilerById_Isbn(alquiler.ClienteId, alquiler.ISBN);
             if (alq.EstadoAlquilerId == 2)
             {
                 alq.EstadoAlquilerId = 1;
@@ -151,17 +149,17 @@ namespace TP2.Template.Application.Services
                 _repository.Update<Alquiler>(alq);
                 _repository.SaveChanges();
             }
-            else 
+            else
             {
                 throw new Exception();
             }
-              
+
         }
 
         public List<AlquilerResponse> GetLibrosByCliente(int id)
         {
             List<Alquiler> alquileres = _query.GetLibrosByCliente(id);
-            
+
             List<AlquilerResponse> alql = new List<AlquilerResponse>() { };
 
             if (id > 0)
@@ -187,11 +185,11 @@ namespace TP2.Template.Application.Services
                 }
                 return alql;
             }
-            else 
+            else
             {
                 throw new Exception();
             }
-           
+
         }
     }
 }

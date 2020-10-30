@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using TP2.Template.Domain.DTOs;
 using TP2.Template.Domain.Entities;
 

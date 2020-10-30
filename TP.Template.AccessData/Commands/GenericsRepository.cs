@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using TP2.Template.Domain.Commands;
-using Microsoft.EntityFrameworkCore;
-using System.Linq;
 
 namespace TP.Template.AccessData.Commands
 {
@@ -23,12 +20,12 @@ namespace TP.Template.AccessData.Commands
 
         public void Delete(int id)
         {
-            throw new Exception();          
-        }    
+            throw new Exception();
+        }
 
         public void Update<T>(T entity) where T : class
         {
-            _context.Entry(entity).State = EntityState.Modified;                     
+            _context.Entry(entity).State = EntityState.Modified;
         }
 
         public void SaveChanges()
