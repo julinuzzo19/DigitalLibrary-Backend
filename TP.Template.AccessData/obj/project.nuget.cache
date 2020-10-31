@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6+H2xBoe15IM9Q2VbJ5tm9yUy9Haf/qSPQvKD8wMjGzrfQPPkE3mzfxbZoPz4UkAWy8d6l1IX9tdFDZ6KhxWgA==",
+  "dgSpecHash": "MXPd0foEuJxGjmpGep8NXqOOTSOEhtmjeAL60qx12PveqtTPTRiL3zTl+qP/i5naskaT9jSrQhEH0N/9q83OPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.AccessData\\TP2.Template.AccessData.csproj",
+  "projectFilePath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.AccessData\\TP2.Template.AccessData.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nuzzo\\.nuget\\packages\\dapper\\1.50.5\\dapper.1.50.5.nupkg.sha512",
     "C:\\Users\\Nuzzo\\.nuget\\packages\\humanizer.core\\2.6.2\\humanizer.core.2.6.2.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7CPQenPhpk8I4beHeQjhruQpxE6TPVMm/uFHRsoYSZSNqoek2rLDN2WJ6zfkJjC1ICy4bUS1YwgwkRXomX1VCA==",
+  "dgSpecHash": "TpzqKGLFLaRZGcCmZA2KqriZtdtM+C8gSrB0DSV3P0IlLYgdNqXL7XP/quiCs1FdRJbgZGXNdhi7zejzixgAZw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.Domain\\TP2.Template.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.Domain\\TP2.Template.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nuzzo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Nuzzo\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

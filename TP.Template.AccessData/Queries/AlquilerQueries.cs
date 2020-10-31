@@ -62,15 +62,7 @@ namespace TP2.Template.AccessData.Queries
 
         }
 
-        public Alquiler GetAlquilerById(int id)
-        {
-            var db = new QueryFactory(connection, sqlKataCompiler);
-
-            var alquiler = db.Query("Alquiler")
-                .Where("Id", "=", id).FirstOrDefault<Alquiler>();
-
-            return alquiler;
-        }
+       
 
 
         public Alquiler GetAlquilerById_Isbn(int clienteid, string isbn)

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.AccessData\\TP2.Template.AccessData.csproj": {}
+    "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.AccessData\\TP2.Template.AccessData.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.AccessData\\TP2.Template.AccessData.csproj": {
+    "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.AccessData\\TP2.Template.AccessData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.AccessData\\TP2.Template.AccessData.csproj",
+        "projectUniqueName": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.AccessData\\TP2.Template.AccessData.csproj",
         "projectName": "TP2.Template.AccessData",
-        "projectPath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.AccessData\\TP2.Template.AccessData.csproj",
+        "projectPath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.AccessData\\TP2.Template.AccessData.csproj",
         "packagesPath": "C:\\Users\\Nuzzo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.AccessData\\obj\\",
+        "outputPath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.AccessData\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nuzzo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,11 +27,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.Application\\TP2.Template.Application.csproj": {
-                "projectPath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.Application\\TP2.Template.Application.csproj"
+              "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.Application\\TP2.Template.Application.csproj": {
+                "projectPath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.Application\\TP2.Template.Application.csproj"
               },
-              "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.Domain\\TP2.Template.Domain.csproj": {
-                "projectPath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.Domain\\TP2.Template.Domain.csproj"
+              "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.Domain\\TP2.Template.Domain.csproj": {
+                "projectPath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.Domain\\TP2.Template.Domain.csproj"
               }
             }
           }
@@ -87,14 +87,14 @@
         }
       }
     },
-    "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.Application\\TP2.Template.Application.csproj": {
+    "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.Application\\TP2.Template.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.Application\\TP2.Template.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.Application\\TP2.Template.Application.csproj",
         "projectName": "TP2.Template.Application",
-        "projectPath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.Application\\TP2.Template.Application.csproj",
+        "projectPath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.Application\\TP2.Template.Application.csproj",
         "packagesPath": "C:\\Users\\Nuzzo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.Application\\obj\\",
+        "outputPath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nuzzo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -110,8 +110,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.Domain\\TP2.Template.Domain.csproj": {
-                "projectPath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.Domain\\TP2.Template.Domain.csproj"
+              "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.Domain\\TP2.Template.Domain.csproj": {
+                "projectPath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.Domain\\TP2.Template.Domain.csproj"
               }
             }
           }
@@ -143,14 +143,14 @@
         }
       }
     },
-    "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.Domain\\TP2.Template.Domain.csproj": {
+    "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.Domain\\TP2.Template.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.Domain\\TP2.Template.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.Domain\\TP2.Template.Domain.csproj",
         "projectName": "TP2.Template.Domain",
-        "projectPath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.Domain\\TP2.Template.Domain.csproj",
+        "projectPath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.Domain\\TP2.Template.Domain.csproj",
         "packagesPath": "C:\\Users\\Nuzzo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\TP.Template.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Nuzzo\\Desktop\\Julian\\TPS PS\\TP2 PS\\DigitalLibrary-Backend\\TP.Template.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nuzzo\\AppData\\Roaming\\NuGet\\NuGet.Config",
