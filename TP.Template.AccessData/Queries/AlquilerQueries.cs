@@ -62,7 +62,11 @@ namespace TP2.Template.AccessData.Queries
 
         }
 
+<<<<<<< HEAD
 
+=======
+       
+>>>>>>> 861c0524c3bdc6fdb1fa95f4959247cc89fd535e
 
 
         public Alquiler GetAlquilerById_Isbn(int clienteid, string isbn)
