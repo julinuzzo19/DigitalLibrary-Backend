@@ -60,22 +60,12 @@ namespace TP2.Template.API.Controllers
                     {
                         throw new Exception();
                     }
-                    return Created("Created", alquiler);
-<<<<<<< HEAD
-                }
-                else
-                {
-                    throw new Exception();
-                }
 
-=======
                 }
-                else
-                {
-                    throw new Exception();
-                }
+                else { throw new Exception(); }
                 
->>>>>>> 861c0524c3bdc6fdb1fa95f4959247cc89fd535e
+                return Created("Created", alquiler);
+
             }
             catch
             {
