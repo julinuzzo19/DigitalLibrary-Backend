@@ -57,7 +57,7 @@ namespace TP2.Template.AccessData.Queries
         public ClienteDto GetClienteById(int id)
         {
             var db = new QueryFactory(connection, sqlKataCompiler);
-            var cliente = db.Query("Cliente").SelectRaw("*").From("Cliente").Where("Cliente.Id", "=", id).FirstOrDefault<ClienteDto>();
+            var cliente = db.Query("Cliente").Where("Cliente.Id", "=", id).FirstOrDefault<ClienteDto>();
 
             return cliente;
         }

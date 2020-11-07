@@ -6,7 +6,6 @@ namespace TP2.Template.Domain.Queries
     public interface IAlquilerQueries
     {
         List<Alquiler> GetAllAlquiler(int estado);
-        Alquiler GetAlquilerById(int id);
         Alquiler GetAlquilerById_Isbn(int clienteid, string isbn);
         List<Alquiler> GetLibrosByCliente(int id);
     }

@@ -11,7 +11,6 @@ namespace TP2.Template.Application.Services
     {
         AlquilerResponse CreateAlquiler(AlquilerDto alquiler);
         List<AlquilerResponse> GetAll(int estado);
-        AlquilerResponse GetById(int id);
         void UpdateById(UpdateAlquilerBody alquiler);
         List<AlquilerResponse> GetLibrosByCliente(int id);
     }
@@ -83,29 +82,6 @@ namespace TP2.Template.Application.Services
                 LibroISBN = entity.ISBN
 
             };
-        }
-
-        public AlquilerResponse GetById(int id)
-        {
-            Alquiler alquiler = _query.GetAlquilerById(id);
-
-            Libro libro = _libroquery.GetLibroById(alquiler.ISBN);
-
-            AlquilerResponse alquilerresponse = new AlquilerResponse
-            {
-                Id = alquiler.Id,
-                FechaAlquiler = alquiler.FechaAlquiler.ToString(),
-                FechaDevolucion = alquiler.FechaDevolucion.ToString(),
-                FechaReserva = alquiler.FechaReserva.ToString(),
-                ClienteId = alquiler.ClienteId,
-                LibroISBN = alquiler.ISBN,
-                Titulo = libro.Titulo,
-                Autor = libro.Autor,
-                Editorial = libro.Editorial,
-                Stock = (int)libro.Stock,
-            };
-
-            return alquilerresponse;
         }
 
         public List<AlquilerResponse> GetAll(int estado)

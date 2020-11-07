@@ -47,20 +47,6 @@ namespace TP2.Template.API.Controllers
             }
         }
 
-        // GET: api/Alquileres/5
-        [HttpGet("{id}")]
-        public IActionResult GetAlquiler(int id)
-        {
-            try
-            {
-                return new JsonResult(_service.GetById(id)) { StatusCode = 201 };
-            }
-            catch
-            {
-                return BadRequest();
-            }
-        }
-
         // POST: api/Alquileres       
         [HttpPost]
         public IActionResult PostAlquiler(AlquilerDto alquiler)
@@ -74,10 +60,13 @@ namespace TP2.Template.API.Controllers
                     {
                         throw new Exception();
                     }
+                    return Created("Created", alquiler);
+                }
+                else
+                {
+                    throw new Exception();
                 }
 
-
-                return Created("Created", alquiler);
             }
             catch
             {
@@ -95,7 +84,7 @@ namespace TP2.Template.API.Controllers
             }
             catch
             {
-                return BadRequest();
+                return NotFound();
             }
 
         }

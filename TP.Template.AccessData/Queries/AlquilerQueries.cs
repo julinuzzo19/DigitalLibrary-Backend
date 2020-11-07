@@ -49,7 +49,7 @@ namespace TP2.Template.AccessData.Queries
 
                 return result.ToList();
             }
-            if (estado==3)
+            if (estado == 3)
             {
                 var query = db.Query("Alquiler").Where("EstadoAlquilerId", "=", estado);
 
@@ -57,20 +57,12 @@ namespace TP2.Template.AccessData.Queries
 
                 return result.ToList();
             }
-            
+
             else { return null; }
 
         }
 
-        public Alquiler GetAlquilerById(int id)
-        {
-            var db = new QueryFactory(connection, sqlKataCompiler);
 
-            var alquiler = db.Query("Alquiler")
-                .Where("Id", "=", id).FirstOrDefault<Alquiler>();
-
-            return alquiler;
-        }
 
 
         public Alquiler GetAlquilerById_Isbn(int clienteid, string isbn)
