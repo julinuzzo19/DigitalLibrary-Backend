@@ -1,0 +1,24 @@
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.Application\bin\Debug\netcoreapp3.1\TP2.Template.Application.deps.json
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.Application\bin\Debug\netcoreapp3.1\TP2.Template.Application.dll
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.Application\bin\Debug\netcoreapp3.1\TP2.Template.Application.pdb
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.Application\bin\Debug\netcoreapp3.1\TP2.Template.Domain.dll
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.Application\bin\Debug\netcoreapp3.1\TP2.Template.Domain.pdb
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.Application\obj\Debug\netcoreapp3.1\TP2.Template.Application.csprojAssemblyReference.cache
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.Application\obj\Debug\netcoreapp3.1\TP2.Template.Application.AssemblyInfoInputs.cache
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.Application\obj\Debug\netcoreapp3.1\TP2.Template.Application.AssemblyInfo.cs
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.Application\obj\Debug\netcoreapp3.1\TP2.Template.Application.csproj.CoreCompileInputs.cache
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.Application\obj\Debug\netcoreapp3.1\TP2.Template.Application.csproj.CopyComplete
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.Application\obj\Debug\netcoreapp3.1\TP2.Template.Application.dll
+C:\Users\Nuzzo\Desktop\Julian\TPS PS\TP2 PS\TP.Template.Application\obj\Debug\netcoreapp3.1\TP2.Template.Application.pdb
+C:\Users\Nuzzo\Desktop\Julian\Programacion\Proyecto Software\TPS PS\TP2 PS\TP.Template.Application\bin\Debug\netcoreapp3.1\TP2.Template.Application.deps.json
+C:\Users\Nuzzo\Desktop\Julian\Programacion\Proyecto Software\TPS PS\TP2 PS\TP.Template.Application\bin\Debug\netcoreapp3.1\TP2.Template.Application.dll
+C:\Users\Nuzzo\Desktop\Julian\Programacion\Proyecto Software\TPS PS\TP2 PS\TP.Template.Application\bin\Debug\netcoreapp3.1\TP2.Template.Application.pdb
+C:\Users\Nuzzo\Desktop\Julian\Programacion\Proyecto Software\TPS PS\TP2 PS\TP.Template.Application\bin\Debug\netcoreapp3.1\TP2.Template.Domain.dll
+C:\Users\Nuzzo\Desktop\Julian\Programacion\Proyecto Software\TPS PS\TP2 PS\TP.Template.Application\bin\Debug\netcoreapp3.1\TP2.Template.Domain.pdb
+C:\Users\Nuzzo\Desktop\Julian\Programacion\Proyecto Software\TPS PS\TP2 PS\TP.Template.Application\obj\Debug\netcoreapp3.1\TP2.Template.Application.csprojAssemblyReference.cache
+C:\Users\Nuzzo\Desktop\Julian\Programacion\Proyecto Software\TPS PS\TP2 PS\TP.Template.Application\obj\Debug\netcoreapp3.1\TP2.Template.Application.AssemblyInfoInputs.cache
+C:\Users\Nuzzo\Desktop\Julian\Programacion\Proyecto Software\TPS PS\TP2 PS\TP.Template.Application\obj\Debug\netcoreapp3.1\TP2.Template.Application.AssemblyInfo.cs
+C:\Users\Nuzzo\Desktop\Julian\Programacion\Proyecto Software\TPS PS\TP2 PS\TP.Template.Application\obj\Debug\netcoreapp3.1\TP2.Template.Application.csproj.CoreCompileInputs.cache
+C:\Users\Nuzzo\Desktop\Julian\Programacion\Proyecto Software\TPS PS\TP2 PS\TP.Template.Application\obj\Debug\netcoreapp3.1\TP2.Template.Application.csproj.CopyComplete
+C:\Users\Nuzzo\Desktop\Julian\Programacion\Proyecto Software\TPS PS\TP2 PS\TP.Template.Application\obj\Debug\netcoreapp3.1\TP2.Template.Application.dll
+C:\Users\Nuzzo\Desktop\Julian\Programacion\Proyecto Software\TPS PS\TP2 PS\TP.Template.Application\obj\Debug\netcoreapp3.1\TP2.Template.Application.pdb

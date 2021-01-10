@@ -79,7 +79,9 @@ namespace TP2.Template.Application.Services
                 FechaReserva = entity.ToString(),
                 FechaDevolucion = entity.ToString(),
                 ClienteId = entity.ClienteId,
-                LibroISBN = entity.ISBN
+                LibroISBN = entity.ISBN,
+                Imagen=libro.Imagen
+                
 
             };
         }
@@ -104,7 +106,9 @@ namespace TP2.Template.Application.Services
                     Titulo = libro.Titulo,
                     Autor = libro.Autor,
                     Editorial = libro.Editorial,
-                    Stock = (int)libro.Stock
+                    Stock = (int)libro.Stock,
+                    Imagen=libro.Imagen
+                
                 };
                 alql.Add(alr);
             }
@@ -155,7 +159,8 @@ namespace TP2.Template.Application.Services
                         Titulo = libro.Titulo,
                         Autor = libro.Autor,
                         Editorial = libro.Editorial,
-                        Stock = (int)libro.Stock
+                        Stock = (int)libro.Stock,
+                        Imagen=libro.Imagen
                     };
                     alql.Add(alr);
                 }

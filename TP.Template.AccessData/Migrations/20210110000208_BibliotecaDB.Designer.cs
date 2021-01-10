@@ -10,7 +10,7 @@ using TP.Template.AccessData;
 namespace TP2.Template.AccessData.Migrations
 {
     [DbContext(typeof(BibliotecaContext))]
-    [Migration("20201016205242_BibliotecaDB")]
+    [Migration("20210110000208_BibliotecaDB")]
     partial class BibliotecaDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

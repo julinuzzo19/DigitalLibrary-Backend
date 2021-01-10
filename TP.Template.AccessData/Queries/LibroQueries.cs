@@ -53,6 +53,7 @@ namespace TP2.Template.AccessData.Queries
             {
                 var query = db.Query("Libro").WhereRaw($"Autor like '%{autor}%'", "sql");
                 var result = query.Get<ResponseLibro>();
+                
                 return result.ToList();
             }
 

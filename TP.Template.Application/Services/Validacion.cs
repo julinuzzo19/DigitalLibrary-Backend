@@ -39,7 +39,7 @@ namespace TP2.Template.Application.Services
 
         }
 
-
+       // \d{6,7}[^\s.,_]
         public static bool ValidarNombre(string nombre)
         {
 

@@ -12,5 +12,6 @@
         public string Autor { get; set; }
         public string Editorial { get; set; }
         public int Stock { get; set; }
+        public string Imagen { get; set; }
     }
 }
